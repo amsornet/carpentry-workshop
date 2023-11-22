@@ -16,6 +16,10 @@ body {
     height: 100%;
     border: .1rem solid aquamarine;
 }
+/*burger-menu scroll*/
+body.no-scroll{
+    overflow: hidden;
+}
 .header {
     display: flex;
     justify-content: space-around;
@@ -30,16 +34,21 @@ body {
     font-size: 3.6rem;
     font-weight: 500;
     text-align: center;
+
 }
+.header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .nav-ul {
     display: flex;
     gap: 3.8rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-ul .nav-li {
     list-style-type: none;
+    align-items: center;
+    position: relative;
 }
 
 .nav-ul .nav-a {
@@ -48,6 +57,79 @@ body {
     text-transform: uppercase;
     color: #000;
     font-size: 2.4rem;
+}
+
+/*burger menu*/
+.burger-menu {
+    display: none;
+    width: 4rem;
+    height: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3.7rem;
+    right: 4rem;
+    z-index: 100;
+}
+.burger-menu span {
+    background: #5E8D7C;
+    height: .3rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: all .3s ease-out;
+}
+
+.burger-menu span:first-child {
+    top: 0;
+}
+
+.burger-menu span:nth-child(2) {
+    top: .8rem;
+}
+
+.burger-menu span:last-child {
+    top: 1.6rem;
+}
+
+.burger-menu-close span:first-child {
+    transform: rotate(45deg);
+    top: .8rem;
+}
+.burger-menu-close span:nth-child(2) {
+    opacity: 0;
+}
+.burger-menu-close span:last-child {
+    transform: rotate(-45deg);
+    top: .8rem
+}
+
+@media only screen and (max-width: 320px) {
+    .burger-menu {
+        display: block;
+    }
+    .nav{
+        height: 8rem;
+
+    }
+    .nav-ul{
+        /*display: none;*/
+
+        position: fixed;
+        top: 0;
+        top: -100vh;
+        padding-top: 1rem;
+        padding-left: 0;
+        z-index: 100;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background: blue;
+        transition: top .7s;
+    }
+    .nav-ul.nav-ul-show {
+        top: 0;
+
+    }
 }
 
 section[home] {
