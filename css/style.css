@@ -106,29 +106,35 @@ body.no-scroll{
 @media only screen and (max-width: 320px) {
     .burger-menu {
         display: block;
-    }
-    .nav{
-        height: 8rem;
 
     }
-    .nav-ul{
-        /*display: none;*/
+    .burger-menu span {
+        background-color: #5E8D7C;
+    }
+    .burger-menu-close span {
+        background-color: #fff;
+    }
+    .nav {
+        width: 100%;
+        height: min-content;
+    }
 
+    .nav-ul {
         position: fixed;
-        top: 0;
         top: -100vh;
-        padding-top: 1rem;
-        padding-left: 0;
+        padding-top: 3.2rem;
         z-index: 100;
         flex-direction: column;
         height: 100vh;
         width: 100%;
-        background: blue;
-        transition: top .7s;
+        color: black;
+        background: #5E8D7C;
+        transition: .7s ease;
+
     }
     .nav-ul.nav-ul-show {
         top: 0;
-
+        left: 0;
     }
 }
 
@@ -147,6 +153,16 @@ section[home] h1 {
     top: 40rem;
     left: 5rem;
 }
+@media only screen and (max-width: 320px) {
+    section[home] {
+        width: 100%;
+        height: min-content;
+    }
+    section[home] h1 {
+        font-size: 3.6rem;
+        top: 33.7rem;
+    }
+}
 
 section[home] .img-1 {
     background: url("../img/01.png"), lightgray 50% / cover no-repeat;
@@ -161,6 +177,8 @@ section[about-us] {
     border: .1rem solid blueviolet;
     background: #FFF;
 }
+
+
 
 section[about-us] h2{
     color: #000;
@@ -193,6 +211,34 @@ section[about-us] p {
     max-width: 60rem;
 }
 
+@media only screen and (max-width: 320px) {
+    section[about-us] {
+        width: 100%;
+        height: min-content;
+    }
+    section[about-us] h2 {
+        font-size: 2.8rem;
+        margin-top: 3.4rem;
+        margin-bottom: 3.4rem;
+    }
+    .about-us {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    section[about-us] .img-2 {
+        width: 100%;
+        height: 22.8rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    section[about-us] p {
+
+        font-size: 2rem;
+        margin: 0 2.7rem 6rem 2.8rem;
+    }
+}
+
 section[blog] {
     max-width: 100%;
     height: 71.1rem;
@@ -222,7 +268,7 @@ section[blog] .card {
     padding: 2rem;
     background: #FFF;
 }
-section[blog] .card .card-text{
+section[blog] .card .card-text {
     color: #000;
     font-size: 2.4rem;
     font-weight: 400;
@@ -252,6 +298,75 @@ section[blog] .card .img-5 {
     height: 21.4rem;
     margin-bottom: 2.9rem;
 }
+
+@media only screen and (max-width: 320px) {
+    section[blog] {
+
+        width: 100%;
+        height: min-content;
+    }
+
+    section[blog] h3 {
+        margin: 3.8rem auto 3.2rem;
+        font-size: 2.8rem;
+    }
+
+    section[blog] .cards {
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+    }
+    section[blog] .card {
+        padding: 0;
+        margin: 0;
+        width: 32rem;
+        height: 100%;
+    }
+    section[blog] .card .card-text {
+        font-size: 2.4rem;
+        margin: 2rem 0 2.1rem 2.8rem;
+    }
+
+    section[blog] .card .img-3 {
+        width: 100%;
+        height: 21.4rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 2.1rem;
+    }
+
+    section[blog] .card p {
+        margin: 0 2.8rem 2.7rem 2.8rem;
+    }
+
+    section[blog] .card .img-4 {
+        width: 100%;
+        height: 21.4rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 2.1rem;
+    }
+
+    section[blog] .card p {
+        margin: 0 2.8rem 2.7rem 2.8rem;
+    }
+
+    section[blog] .card .img-5 {
+        width: 100%;
+        height: 21.4rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 2.1rem;
+    }
+
+    section[blog] .card p {
+        margin: 0 2.8rem 2.7rem 2.8rem;
+    }
+}
+
 
 section[works] {
     max-width: 100%;
@@ -288,6 +403,42 @@ section[works] p{
     color: #000;
     font-size: 2rem;
     font-weight: 300;
+}
+
+@media only screen and (max-width: 320px) {
+    section[works] {
+        width: 100%;
+        height: min-content;
+        margin-top: 3.2rem;
+    }
+
+    section[works] h4 {
+        margin: 3.6rem auto 3.3rem;
+        font-size: 2.8rem;
+    }
+
+    section[works] .works-div {
+        flex-direction: column;
+        align-items: start;
+
+
+    }
+
+    section[works] .img-6 {
+        width: 100%;
+        height: 20.7rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    section[works] p {
+        font-size: 2rem;
+        max-width: 25.8rem;
+        margin: 0 3rem 2.4rem 3.1rem;
+        text-align: start;
+    }
+
 }
 
 .footer {
