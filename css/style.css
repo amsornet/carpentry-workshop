@@ -129,7 +129,7 @@ body.no-scroll{
         width: 100%;
         color: black;
         background: #5E8D7C;
-        transition: .7s ease;
+        transition: all .7s ease;
         left: 0;
 
     }
