@@ -142,7 +142,11 @@ body.no-scroll{
 
 @media only screen and (min-width: 768px)
 {
-    .burger-menu {
+    .header {
+        max-width: 58.5rem;
+        width: 100%;
+    }
+        .burger-menu {
         display: block;
         top: 5rem;
         right: 22rem;
@@ -206,14 +210,23 @@ section[home] h1 {
 
 @media only screen and (min-width: 768px) {
     section[home] {
+        max-width: 58.5rem;
         width: 100%;
-        height: min-content;
+        height: 100%;
     }
     section[home] h1 {
         width: 30px;
         font-size: 3.6rem;
         top: 43rem;
         left: 19rem;
+    }
+    section[home] div
+    {
+        width: 100%;
+        height: 20rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
     }
 }
 
@@ -295,12 +308,11 @@ section[about-us] p {
 
 @media only screen and (min-width: 768px) {
     section[about-us] {
-        max-width: 60.7rem;
+        max-width: 58.5rem;
         width: 100%;
 
         height: 100%;
-        margin: 0;
-        padding: 0;
+
     }
     section[about-us] h2 {
         font-size: 2.8rem;
@@ -325,9 +337,8 @@ section[about-us] p {
     section[about-us] p {
 
         font-size: 2rem;
-        margin: 0;
-        padding: 0 2rem;
-        text-align: justify;
+
+        text-align: justify-all;
     }
 }
 
@@ -458,7 +469,35 @@ section[blog] .card .img-5 {
         margin: 0 2.8rem 2.7rem 2.8rem;
     }
 }
+@media only screen and (min-width: 768px)
+{
+    section[blog] {
+        max-width: 58.5rem;
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+    }
+    section[blog] h3
+    {
+        margin: 0;
+        padding: 1rem;
+    }
+    section[blog] .cards
+    {
+        gap: 1rem;
+    }
+    section[blog] .card
+   {
+        height: min-content;
 
+   }
+    /*section[blog] .adaptive768px*/
+    /*{*/
+    /*    padding: 0;*/
+    /*    margin: 0;*/
+    /*}*/
+}
 
 section[works] {
     max-width: 100%;
