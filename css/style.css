@@ -571,7 +571,16 @@ section[works] p{
     }
 
 }
+@media only screen and (min-width: 768px)
+{
+    section[works]
+    {
+        max-width: 58.5rem;
+        width: 100%;
+        height: max-content;
+    }
 
+}
 .footer {
     display: flex;
     height: 7.2rem;
@@ -588,3 +597,12 @@ section[works] p{
     text-transform: uppercase;
 }
 
+@media only screen and (min-width: 768px)
+{
+    footer
+    {
+        max-width: 58.5rem;
+        width: 100%;
+        height: max-content;
+    }
+}
